@@ -1,0 +1,217 @@
+Acid Rock
+Alternative Rock
+Ambient
+Avant-garde
+Blues
+Blues Rock
+Classic Rock
+Classical
+Comedy Rock
+Country
+Country Rock
+Dance
+Dark Ambient
+Death Metal
+Disco
+Dream Pop
+Electronic
+Electronic Rock
+Emo
+Experimental Rock
+Folk
+Folk Metal
+Folk Rock
+Funk
+Funk Metal
+Funk Rock
+Garage Rock
+Glam Rock
+Gothic Metal
+Gothic Rock
+Grunge
+Hard Rock
+Hardcore
+Heavy Metal
+Hip Hop
+House
+Indie
+Indie Folk
+Indie Pop
+Indie Rock
+Industrial
+Industrial Metal
+Industrial Rock
+Instrumental Rock
+J-pop
+Jazz
+K-pop
+Latin
+Latin Pop
+Lounge
+Math Rock
+Melodic Death Metal
+Metal
+Metalcore
+Motown
+New Wave
+Noise Pop
+Noise Rock
+Nu Metal
+Piano Rock
+Pop
+Pop Punk
+Pop Rock
+Post-Hardcore
+Post-Punk
+Post-Rock
+Power Pop
+Power Metal
+Progressive Metal
+Progressive Rock
+Psychedelic Pop
+Psychedelic Rock
+Punk
+Punk Rock
+R&B
+Rap
+Reggae
+Rock
+Rock and Roll
+Salsa
+Samba
+Shoegaze
+Singer-Songwriter
+Ska
+Soft Rock
+Soul
+Stoner Rock
+Surf Rock
+Symphonic Metal
+Synth-pop
+Techno
+Trance
+Trip Hop
+Afro-Cuban
+Afrobeat
+Alternative Dance
+Alternative Metal
+Art Punk
+Art Rock
+Bachata
+Bebop
+Big Band
+Black Metal
+Bluegrass
+Bolero
+Bossa Nova
+Breakbeat
+Britpop
+Cajun
+Calypso
+Celtic
+Chamber Music
+Chanson
+Chicago Blues
+Chillwave
+Christian Rock
+Contemporary Country
+Cool Jazz
+Country Blues
+Crunk
+Crust Punk
+Dance-Punk
+Darkwave
+Deathcore
+Delta Blues
+Desert Rock
+Dixieland
+Doom Metal
+Downtempo
+Drone
+Dub
+Dubstep
+Electro
+Electro-swing
+Emo Pop
+Europop
+Experimental
+Fado
+Flamenco
+Freak Folk
+Free Jazz
+Funk Carioca
+Futurepop
+Gabber
+Game Boy Music
+Gangsta Rap
+Glam Punk
+Glitch
+Goa Trance
+Goregrind
+Gospel
+Grime
+Grindcore
+Groove Metal
+Hard Bop
+Hard Trance
+Hardstyle
+Honky Tonk
+Horrorcore
+IDM
+Industrial Dance
+Jangle Pop
+Jazz Fusion
+Jazz Rap
+Jump Blues
+Jungle
+Klezmer
+Krautrock
+Lo-fi
+Mambo
+Mariachi
+Merengue
+Minimal Techno
+Neoclassical Metal
+Neofolk
+New Age
+No Wave
+Norteño
+Oi!
+Old-time
+Opera
+Post-bop
+Post-metal
+Progressive House
+Psytrance
+Queercore
+Ragtime
+Reggaeton
+Riot Grrrl
+Rockabilly
+Roots Reggae
+Schranz
+Screamo
+Sea Shanties
+Skate Punk
+Sludge Metal
+Smooth Jazz
+Southern Rock
+Space Rock
+Speed Metal
+Spoken Word
+Stoner Metal
+Swing
+Symphonic Black Metal
+Symphonic Rock
+Tech House
+Tejano
+Thrash Metal
+Traditional Country
+Tribal House
+UK Garage
+Vaporwave
+Viking Metal
+West Coast Swing
+World Music
+Zouk
+Zydeco
