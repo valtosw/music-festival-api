@@ -1,7 +1,5 @@
-using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MusicFestival.API.DTOs;
@@ -91,10 +89,8 @@ app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Festival API v1");
-    c.RoutePrefix = "swagger"; // open at /swagger
+    c.RoutePrefix = "swagger";
 
-
-    // Configure OAuth for Swagger UI
     c.OAuthClientId(configuration["Auth0:ClientId"]);
     c.OAuthClientSecret(configuration["Auth0:ClientSecret"]);
     c.OAuthUsePkce();
