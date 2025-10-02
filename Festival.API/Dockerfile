@@ -11,7 +11,7 @@ COPY ../ .
 
 
 WORKDIR "/src/Festival.API"
-RUN dotnet publish "Festival.API.csproj" -c Release -o /app/publish --no-restore
+RUN dotnet publish "MusicFestival.API.csproj" -c Release -o /app/publish --no-restore
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
@@ -20,4 +20,4 @@ EXPOSE 8080
 
 COPY --from=build /app/publish .
 
-ENTRYPOINT ["dotnet", "Festival.API.dll"]
+ENTRYPOINT ["dotnet", "MusicFestival.API.dll"]
