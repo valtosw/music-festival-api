@@ -6,8 +6,6 @@
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
 
-        public int FestivalId { get; set; }
-        public Festival? Festival { get; set; }
         public int StageId { get; set; }
         public Stage? Stage { get; set; }
         public int ArtistId { get; set; }
