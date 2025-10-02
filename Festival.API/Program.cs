@@ -33,9 +33,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     };
 });
 
-builder.Services.AddAuthorizationBuilder()
-    .AddPolicy("AdminOnly", policy => policy.RequireClaim("permissions", "admin"));
-
 builder.Services.AddControllers().AddJsonOptions(opts =>
 {
     opts.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
@@ -52,32 +49,42 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Festival API", Version = "v1" });
     var authority = $"https://{auth0Domain}/";
-    var oauthScheme = new OpenApiSecurityScheme
+
+    c.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
     {
-        Name = "Auth0",
         Type = SecuritySchemeType.OAuth2,
         Flows = new OpenApiOAuthFlows
         {
             AuthorizationCode = new OpenApiOAuthFlow
             {
-                AuthorizationUrl = new Uri(authority + "authorize"),
+                AuthorizationUrl = new Uri($"{authority}authorize?audience={auth0Audience}"),
+
                 TokenUrl = new Uri(authority + "oauth/token"),
                 Scopes = new Dictionary<string, string>
                 {
-                { "openid", "OpenID Connect scope" },
-                { "profile", "Profile scope" },
-                { "email", "Email scope" },
-                { "read:festivals", "Read festivals" },
-                { "write:festivals", "Write festivals" }
+                    { "openid", "OpenID Connect scope" },
+                    { "profile", "Profile scope" },
+                    { "email", "Email scope" },
+                    { "read:festivals", "Read festivals" },
+                    { "write:festivals", "Write festivals" }
                 }
             }
         }
-    };
+    });
 
-    c.AddSecurityDefinition("oauth2", oauthScheme);
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
-        [oauthScheme] = ["openid", "profile", "email", "read:festivals", "write:festivals"]
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "oauth2"
+                }
+            },
+            Array.Empty<string>()
+        }
     });
 });
 

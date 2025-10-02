@@ -9,7 +9,7 @@ namespace MusicFestival.API.Controllers
     public class TelegramController(ITelegramService telegramService) : BaseApiController
     {
         [HttpPost("notify")]
-        [Authorize(Policy = "AdminOnly")]
+        [Authorize]
         public async Task<IActionResult> Notify([FromBody] string message)
         {
             await telegramService.SendMessageAsync(message);

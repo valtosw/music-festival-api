@@ -30,7 +30,7 @@ namespace MusicFestival.API.Controllers
         }
 
         [HttpPost]
-        [Authorize(Policy = "AdminOnly")]
+        [Authorize]
         public async Task<ActionResult<ArtistDto>> CreateArtist(ArtistDto artistDto)
         {
             var artist = mapper.Map<Artist>(artistDto);
@@ -42,7 +42,7 @@ namespace MusicFestival.API.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Policy = "AdminOnly")]
+        [Authorize]
         public async Task<IActionResult> UpdateArtist(int id, ArtistDto artistDto)
         {
             if (id != artistDto.Id) return BadRequest();
@@ -55,7 +55,7 @@ namespace MusicFestival.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Policy = "AdminOnly")]
+        [Authorize]
         public async Task<IActionResult> DeleteArtist(int id)
         {
             var artist = await context.Artists.FindAsync(id);

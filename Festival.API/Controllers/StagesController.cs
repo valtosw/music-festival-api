@@ -31,7 +31,7 @@ namespace MusicFestival.API.Controllers
         }
 
         [HttpPost]
-        [Authorize(Policy = "AdminOnly")]
+        [Authorize]
         public async Task<ActionResult<StageDto>> CreateStage(StageDto stageDto)
         {
             var stage = mapper.Map<Stage>(stageDto);
@@ -42,7 +42,7 @@ namespace MusicFestival.API.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Policy = "AdminOnly")]
+        [Authorize]
         public async Task<IActionResult> UpdateStage(int id, StageDto stageDto)
         {
             if (id != stageDto.Id) return BadRequest();
@@ -55,7 +55,7 @@ namespace MusicFestival.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Policy = "AdminOnly")]
+        [Authorize]
         public async Task<IActionResult> DeleteStage(int id)
         {
             var stage = await context.Stages.FindAsync(id);
